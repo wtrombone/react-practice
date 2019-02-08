@@ -9,7 +9,8 @@ import routes from './routes';
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
 
-ReactDOM.render((
+ReactDOM.render(
+    (
         <Provider store={ store }>
             <Router history={ history }>
                 { routes }
